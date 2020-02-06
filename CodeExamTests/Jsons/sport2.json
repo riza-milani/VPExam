@@ -1,0 +1,61 @@
+{
+  "type": "page",
+  "pageType": "section",
+  "sectionId": "117ef630-c7863f6-09418c0-2aebfef",
+  "sectionType": "sportPerDay",
+  "title": "Sport online - Streama Premier & Champions league live - Viaplay.se",
+  "description": "Vill du se sport på nätet? På Viaplay kan du se Champions League och Premier League live, följa NHL och Formel 1, golf och annan sport!",
+  "_links": {
+    "viaplay:sections": [
+      {
+        "id": "35bb8a90-d40e-11e2-8b8b-0800200c9a66",
+        "title": "Serier",
+        "href": "https://content.viaplay.se/ios-se/serier{?dtg}",
+        "type": "vod",
+        "name": "series",
+        "templated": true
+      },
+      {
+        "id": "2037b330-d411-11e2-8b8b-0800200c9a66",
+        "title": "Film",
+        "href": "https://content.viaplay.se/ios-se/film{?dtg}",
+        "type": "vod",
+        "name": "movie",
+        "templated": true
+      },
+      {
+        "id": "9dff1a88-42a3c60-afb71be-c624637",
+        "title": "Sport",
+        "href": "https://content.viaplay.se/ios-se/sport3{?dtg}",
+        "type": "sport",
+        "name": "sport",
+        "templated": true
+      },
+      {
+        "id": "117ef630-c7863f6-09418c0-2aebfef",
+        "title": "Sport",
+        "href": "https://content.viaplay.se/ios-se/sport2{?dtg}",
+        "type": "sportPerDay",
+        "name": "sport",
+        "templated": true,
+        "active": true
+      },
+      {
+        "id": "8e5febf0-d4e0-11e2-8b8b-0800200c9a66",
+        "title": "Sport",
+        "href": "https://content.viaplay.se/ios-se/sport{?dtg}",
+        "type": "vod",
+        "name": "sport",
+        "templated": true
+      },
+      {
+        "id": "1a6a2ec0-d4e2-11e2-8b8b-0800200c9a66",
+        "title": "Barn",
+        "href": "https://content.viaplay.se/ios-se/barn{?dtg}",
+        "type": "vod",
+        "name": "kids",
+        "templated": true
+      }
+    ]
+  }
+}

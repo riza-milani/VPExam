@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "0A8F443F-8484-41A5-9487-58D7D53EEE70"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6D3C4137-0088-4AD9-952A-DDE222C316E2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CodeExam/Network/ServiceCall.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "getSections(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A633EC95-CF06-4119-8556-72FA1724E5D9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CodeExam/Interactor/VPInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "fetchSections(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5EE8F2C4-66DD-4432-A79C-B0A1EB16701E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CodeExam/Interactor/VPInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "fetchSectionDetail(href:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5EE8F2C4-66DD-4432-A79C-B0A1EB16701E - 3b453ae4d4952ab"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;CodeExam.VPModel, Swift.Error&gt;) -&gt; () in CodeExam.VPInteractor.fetchSectionDetail(href: Swift.String, completion: (Swift.Optional&lt;CodeExam.VPModel&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "CodeExam"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/riza/WorkSpace/XcodeWorkspace/ViaPlay/CodeExam/CodeExam/Interactor/VPInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "136">
+               </Location>
+               <Location
+                  uuid = "5EE8F2C4-66DD-4432-A79C-B0A1EB16701E - 3b453ae4d4952ab"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;CodeExam.VPModel, Swift.Error&gt;) -&gt; () in CodeExam.VPInteractor.fetchSectionDetail(href: Swift.String, completion: (Swift.Optional&lt;CodeExam.VPModel&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "CodeExam"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/riza/WorkSpace/XcodeWorkspace/ViaPlay/CodeExam/CodeExam/Interactor/VPInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "164">
+               </Location>
+               <Location
+                  uuid = "5EE8F2C4-66DD-4432-A79C-B0A1EB16701E - 3b453ae4d4952ab"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;CodeExam.VPModel, Swift.Error&gt;) -&gt; () in CodeExam.VPInteractor.fetchSectionDetail(href: Swift.String, completion: (Swift.Optional&lt;CodeExam.VPModel&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "CodeExam"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/riza/WorkSpace/XcodeWorkspace/ViaPlay/CodeExam/CodeExam/Interactor/VPInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "472">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
