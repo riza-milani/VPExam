@@ -36,7 +36,7 @@ class VPInteractorTests: XCTestCase {
             asyncExpectation.fulfill()
             
         }
-        waitForExpectations(timeout: 1, handler: nil)
+        waitForExpectations(timeout: 10, handler: nil)
     }
 
     func testSectionSerier() {
@@ -49,7 +49,7 @@ class VPInteractorTests: XCTestCase {
             XCTAssertEqual(vpModel.title, "TV-serier online - Streama serier på nätet eller ladda ned")
             asyncExpectation.fulfill()
         }
-        waitForExpectations(timeout: 1, handler: nil)
+        waitForExpectations(timeout: 10, handler: nil)
     }
 
     func testSectionSport() {
@@ -62,7 +62,7 @@ class VPInteractorTests: XCTestCase {
             XCTAssertEqual(vpModel.title, "Sport online - Streama Premier & Champions league live - Viaplay.se")
             asyncExpectation.fulfill()
         }
-        waitForExpectations(timeout: 1, handler: nil)
+        waitForExpectations(timeout: 10, handler: nil)
     }
 
     func testSectionSport2() {
@@ -75,7 +75,7 @@ class VPInteractorTests: XCTestCase {
             XCTAssertEqual(vpModel.title, "Sport online - Streama Premier & Champions league live - Viaplay.se")
             asyncExpectation.fulfill()
         }
-        waitForExpectations(timeout: 1, handler: nil)
+        waitForExpectations(timeout: 10, handler: nil)
     }
 
     func testSectionSport3() {
@@ -88,7 +88,7 @@ class VPInteractorTests: XCTestCase {
             XCTAssertEqual(vpModel.title, "Sport online - Streama Premier & Champions league live - Viaplay.se")
             asyncExpectation.fulfill()
         }
-        waitForExpectations(timeout: 1, handler: nil)
+        waitForExpectations(timeout: 10, handler: nil)
     }
 
     func testSectionFilm() {
@@ -101,7 +101,7 @@ class VPInteractorTests: XCTestCase {
             XCTAssertEqual(vpModel.title, "Film på nätet - Streama film online eller ladda ned")
             asyncExpectation.fulfill()
         }
-        waitForExpectations(timeout: 1, handler: nil)
+        waitForExpectations(timeout: 10, handler: nil)
     }
 
     func testSectionBarn() {
@@ -114,7 +114,7 @@ class VPInteractorTests: XCTestCase {
             XCTAssertEqual(vpModel.title, "Barnfilmer och serier för barn på nätet – Viaplay.se")
             asyncExpectation.fulfill()
         }
-        waitForExpectations(timeout: 1, handler: nil)
+        waitForExpectations(timeout: 10, handler: nil)
     }
 
 }
