@@ -31,7 +31,7 @@ class VPInteractor: VPInteractorProtocol {
             switch result {
             case .success(let vpmodel):
                 completion(vpmodel)
-            case .failure(let error):
+            case .failure(_):
                 completion(nil)
             }
         }

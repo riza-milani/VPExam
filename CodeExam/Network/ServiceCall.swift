@@ -73,7 +73,7 @@ class ServiceCallApi: ServiceCall {
             let config = URLSessionConfiguration.default
             config.requestCachePolicy = self.cachePolicy
             if self.shouldInvalidateCache {
-                config.requestCacheP    olicy = .reloadIgnoringLocalCacheData
+                config.requestCachePolicy = .reloadIgnoringLocalCacheData
                 urlCache.removeAllCachedResponses()
                 self.shouldInvalidateCache = false
             }
