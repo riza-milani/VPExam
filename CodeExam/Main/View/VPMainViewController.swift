@@ -85,7 +85,15 @@ class VPMainViewDataSource: NSObject, UITableViewDataSource, UITableViewDelegate
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
-        cell.textLabel?.text = sections?[indexPath.row].title 
+        cell.textLabel?.text = sections?[indexPath.row].title
+        cell.textLabel?.numberOfLines = 0
+        if let label = cell.textLabel {
+            label.attributedText =
+            NSMutableAttributedString()
+                .normal("section - ")
+                .bold(" \(sections?[indexPath.row].title ?? "")\n")
+                .light("\(sections?[indexPath.row].id ?? "")")
+        }
         return cell
     }
 
@@ -94,5 +102,51 @@ class VPMainViewDataSource: NSObject, UITableViewDataSource, UITableViewDelegate
             presenter?.showDetail(href: href)
         }
     }
-    
+
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
+    }
+}
+
+// MARK: - NSMutableAttributedString Extension
+// Source: https://stackoverflow.com/a/37992022/10002272
+
+fileprivate extension NSMutableAttributedString {
+    var fontSize:CGFloat { return 20 }
+    var lightFontSize:CGFloat { return 10 }
+    var boldFont:UIFont { return UIFont(name: "Helvetica-Bold", size: fontSize) ?? UIFont.boldSystemFont(ofSize: fontSize) }
+    var normalFont:UIFont { return UIFont(name: "Helvetica-Regular", size: fontSize) ?? UIFont.systemFont(ofSize: fontSize)}
+    var lightFont:UIFont { return UIFont(name: "Helvetica-Light", size: lightFontSize) ?? UIFont.systemFont(ofSize: lightFontSize)}
+
+    func bold(_ value:String) -> NSMutableAttributedString {
+
+        let attributes:[NSAttributedString.Key : Any] = [
+            .font : boldFont
+        ]
+
+        self.append(NSAttributedString(string: value, attributes:attributes))
+        return self
+    }
+
+    func normal(_ value:String) -> NSMutableAttributedString {
+
+        let attributes:[NSAttributedString.Key : Any] = [
+            .font : normalFont,
+        ]
+
+        self.append(NSAttributedString(string: value, attributes:attributes))
+        return self
+    }
+
+    func light(_ value:String) -> NSMutableAttributedString {
+
+        let attributes:[NSAttributedString.Key : Any] = [
+            .font :  lightFont,
+            .foregroundColor : UIColor.lightGray
+
+        ]
+
+        self.append(NSAttributedString(string: value, attributes:attributes))
+        return self
+    }
 }
