@@ -16,7 +16,9 @@ class RootWindowCreator {
         let navigationContoller = UINavigationController(rootViewController: destinationViewController)
         navigationContoller.modalPresentationStyle = .fullScreen
         window.rootViewController = navigationContoller
-        window.overrideUserInterfaceStyle = .light
+        if #available(iOS 13.0, *) {
+            window.overrideUserInterfaceStyle = .light
+        }
         return window
     }
 }
