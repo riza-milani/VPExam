@@ -85,14 +85,13 @@ class VPMainViewDataSource: NSObject, UITableViewDataSource, UITableViewDelegate
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
-        cell.textLabel?.text = sections?[indexPath.row].title
-        cell.textLabel?.numberOfLines = 0
-        if let label = cell.textLabel {
+        if let label = cell.textLabel, let section = sections?[indexPath.row] {
+            label.numberOfLines = 0
             label.attributedText =
             NSMutableAttributedString()
                 .normal("section - ")
-                .bold(" \(sections?[indexPath.row].title ?? "")\n")
-                .light("\(sections?[indexPath.row].id ?? "")")
+                .bold(" \(section.title)\n")
+                .light("\(section.id)")
         }
         return cell
     }
